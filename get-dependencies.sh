@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm imagemagick potrace
+pacman -Syu --noconfirm imagemagick potrace libheif
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
