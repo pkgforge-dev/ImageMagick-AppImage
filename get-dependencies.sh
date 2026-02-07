@@ -6,8 +6,24 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm imagemagick potrace expac
-pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' imagemagick)
+pacman -Syu --noconfirm \
+	djvulibre     \
+	imagemagick   \
+	jbigkit       \
+	libheif       \
+	libjpeg-turbo \
+	libjxl        \
+	libraw        \
+	librsvg       \
+	libtiff       \
+	libultrahdr   \
+	libwebp       \
+	libwmf        \
+	libzip        \
+	openexr       \
+	openjpeg2     \
+	pango         \
+	potrace
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
